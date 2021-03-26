@@ -1,43 +1,631 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt" class=""> <head> <script>window.exportsite=true</script> 
+<!-- Injecting site-wide to the head --><!-- End Injecting site-wide to the head --><!-- ========= Meta Tags ========= --> <meta http-equiv="Content-type" content="text/html;charset=utf-8"></meta> 
+ <meta charset="utf-8"></meta> 
+ <meta id="view" name="viewport" content=", initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover"></meta> 
+ <meta name="apple-mobile-web-app-capable" content="yes"></meta> 
+ <title>Home</title> 
+<!--Add favorites icons--><!-- End favorite icons --><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/><!-- render the required CSS and JS in the head section --><!-- Google Fonts Include --><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900|Nunito:100,200,300,400,500,600,700,800,900|Montserrat:100,200,300,400,500,600,700,800,900&subset=latin-ext&display=swap"/><!-- RT CSS Include d-css-runtime-desktop-one-package-new--><!-- End of RT CSS Include --><!-- Support `img` size attributes --><!-- This is populated in Ajax navigation --><!-- Site CSS --><!-- Page CSS --><!--[if IE 7]><style>.fw-head.fw-logo img{max-width: 290px;}.dm_header .logo-div img{max-width: 290px;}</style><![endif]--><!--[if IE 8]><style>.fw-head .fw-logo img{max-width: 290px;}.dm_header .logo-div img{max-width: 290px;}*#dm div.dmHeader{_height:90px;min-height:0px;}</style><![endif]--><!-- Flex Sections CSS --><!-- ========= JS Section ========= --><!-- Modernizr --><!-- Load jQuery --><!-- End Load jQuery --><!-- HEAD RT JS Include --><!-- End of HEAD RT JS Include --><!-- End render the required css and JS in the head section --> <meta name="twitter:card" content="summary"></meta> 
+<!-- Set the branding colors global to support polyfilling cssVariables --><!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= --><link href="/Style/desktop.css" rel="stylesheet" type="text/css"/><link href="/Pages/desktop/home/style.css" rel="stylesheet" type="text/css"/></head> 
+ <body id="dmRoot" class="supportsFontIcons supportsFontIcons dmRoot dmDesktopBody fix-mobile-scrolling dmResellerSite dmLargeBody " style="padding:0;margin:0;"> <div id="disabledImageZone" style="display:none;z-index:-1"> <style type="text/css">#imageZone {
+                    position: absolute;
+                    margin: auto;
+                }
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Create React App + Go API</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+                .coloumns {
+                    border-radius: 3px;
+                    background-color: rgb(249, 152, 13); /*border:1px solid #999;*/
+                    height: 18px;
+                    width: 6px;
+                    -webkit-animation-name: loader;
+                    -webkit-animation-duration: 1s;
+                    -webkit-animation-iteration-count: infinite;
+                    -webkit-animation-direction: linear;
+                    -moz-animation-name: loader;
+                    -moz-animation-duration: 1s;
+                    -moz-animation-iteration-count: infinite;
+                    -moz-animation-direction: linear;
+                    opacity: .25;
+                    -webkit-transform: scale(0.7);
+                    -webkit-transform-origin: 50% 180%;
+                    -moz-transform: scale(0.7);
+                    -moz-transform-origin: 50% 180%;
+                    position: absolute;
+                }
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+                #coloumn1 {
+                    -webkit-transform: rotate(0deg);
+                    -webkit-animation-delay: -.914s;
+                    -moz-transform: rotate(0deg);
+                    -moz-animation-delay: -.914s;
+                }
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+                #coloumn2 {
+                    -webkit-transform: rotate(30deg);
+                    -webkit-animation-delay: -.831s;
+                    -moz-transform: rotate(30deg);
+                    -moz-animation-delay: -.831s;
+                }
+
+                #coloumn3 {
+                    -webkit-transform: rotate(60deg);
+                    -webkit-animation-delay: -.747s;
+                    -moz-transform: rotate(60deg);
+                    -moz-animation-delay: -.747s;
+                }
+
+                #coloumn4 {
+                    -webkit-transform: rotate(90deg);
+                    -webkit-animation-delay: -.664s;
+                    -moz-transform: rotate(90deg);
+                    -moz-animation-delay: -.664s;
+                }
+
+                #coloumn5 {
+                    -webkit-transform: rotate(120deg);
+                    -webkit-animation-delay: -.581s;
+                    -moz-transform: rotate(120deg);
+                    -moz-animation-delay: -.581s;
+                }
+
+                #coloumn6 {
+                    -webkit-transform: rotate(150deg);
+                    -webkit-animation-delay: -.498s;
+                    -moz-transform: rotate(150deg);
+                    -moz-animation-delay: -.498s;
+                }
+
+                #coloumn7 {
+                    -webkit-transform: rotate(180deg);
+                    -webkit-animation-delay: -.415s;
+                    -moz-transform: rotate(180deg);
+                    -moz-animation-delay: -.415s;
+                }
+
+                #coloumn8 {
+                    -webkit-transform: rotate(210deg);
+                    -webkit-animation-delay: -.332s;
+                    -moz-transform: rotate(210deg);
+                    -moz-animation-delay: -.332s;
+                }
+
+                #coloumn9 {
+                    -webkit-transform: rotate(240deg);
+                    -webkit-animation-delay: -.249s;
+                    -moz-transform: rotate(240deg);
+                    -moz-animation-delay: -.249s;
+                }
+
+                #coloumn10 {
+                    -webkit-transform: rotate(270deg);
+                    -webkit-animation-delay: -.166s;
+                    -moz-transform: rotate(270deg);
+                    -moz-animation-delay: -.166s;
+                }
+
+                #coloumn11 {
+                    -webkit-transform: rotate(300deg);
+                    -webkit-animation-delay: -.083s;
+                    -moz-transform: rotate(300deg);
+                    -moz-animation-delay: -.083s;
+                }
+
+                #coloumn12 {
+                    -webkit-transform: rotate(330deg);
+                    -moz-transform: rotate(330deg);
+                }
+
+                @-webkit-keyframes loader {
+                    0% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: .25;
+                    }
+                }
+
+                @-moz-keyframes loader {
+                    0% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: .25;
+                    }
+                }</style> 
+ <div id="imageZone"> <div id="coloumn1" class="coloumns"></div> 
+ <div id="coloumn2" class="coloumns"></div> 
+ <div id="coloumn3" class="coloumns"></div> 
+ <div id="coloumn4" class="coloumns"></div> 
+ <div id="coloumn5" class="coloumns"></div> 
+ <div id="coloumn6" class="coloumns"></div> 
+ <div id="coloumn7" class="coloumns"></div> 
+ <div id="coloumn8" class="coloumns"></div> 
+ <div id="coloumn9" class="coloumns"></div> 
+ <div id="coloumn10" class="coloumns"></div> 
+ <div id="coloumn11" class="coloumns"></div> 
+ <div id="coloumn12" class="coloumns"></div> 
+</div> 
+</div> 
+<!-- ========= Site Content ========= --> <div id="dm" class="dmwr"> <div class="dm_wrapper hamburgerLayout-var5 null hamburgerLayout"> <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="Hamburger" class="runtime-module-container dm-bfs dm-layout-home hasAnimations hasStickyHeader inMiniHeaderMode dmPageBody d-page-1716942098 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-buttonstyle="BORDER_SHORT" data-soch="true" data-background-size="cover" data-background-attachment="fixed" data-background-repeat="no-repeat" data-background-position="50% 0%" data-background-hide-inner="true" data-background-fullbleed="false" data-background-parallax-selector=".dmSectionParallex" data-background-parallax-speed="0.2"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var"> <div id="site_content"> <div class="p_hfcontainer"> <div id="hamburger-drawer" class="hamburger-drawer layout-drawer" layout="409f4497cf4146ae996de35591cee226===header" data-origin="top" data-auto-height="true"> <div class="u_1583577368 dmRespRow" style="text-align: center;" id="1583577368"> <div class="dmRespColsWrapper" id="1674547623"> <div class="u_1591300449 dmRespCol small-12 medium-12 large-12 empty-column" id="1591300449"></div> 
+</div> 
+</div> 
+ <div class="u_1601911564 dmRespRow middleDrawerRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1601911564"> <div class="dmRespColsWrapper" id="1439022614"> <div class="u_1218126608 dmRespCol small-12 large-3 medium-3" id="1218126608"> <nav class="u_1775565967 effect-text-color main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_4" layout-sub="" data-show-vertical-sub-items="HIDE" id="1775565967" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" data-from-nav="true" data-sub-nav="true" data-items="-1" custom-li-class="" custom-ul-class="" custom-a-class="" custom-inner-ul-class="" custom-nested-inner-ul-class="" custom-span-class="" navigation-id="unifiedNav" data-links-level="0" is-build-your-own="false"> <ul class="unifiednav__container  " data-auto="navigation-pages"> <li class=" unifiednav__item-wrap " data-auto="more-pages"> <a href="./#Bio" class="unifiednav__item  dmUDNavigationItem_010101832589  " target="" data-target-page-alias="" raw_url="/home/"> <span class="nav-item-text " data-link-text="
+                  
+         Bio
+        
+                " data-auto="page-text-style">Bio <span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li><li class=" unifiednav__item-wrap " data-auto="more-pages"> <a href="./#Listen" class="unifiednav__item  dmUDNavigationItem_010101388591  " target="" data-target-page-alias="" raw_url="/home/"> <span class="nav-item-text " data-link-text="
+                  
+         Ouça
+        
+                " data-auto="page-text-style">Ou&ccedil;a <span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li><li class=" unifiednav__item-wrap " data-auto="more-pages"> <a href="./#Gallery" class="unifiednav__item  dmUDNavigationItem_010101946142  " target="" data-target-page-alias="" raw_url="/home/"> <span class="nav-item-text " data-link-text="
+                  
+         Galeria
+        
+                " data-auto="page-text-style">Galeria <span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li><li class=" unifiednav__item-wrap " data-auto="more-pages"> <a href="./#Live" class="unifiednav__item  dmUDNavigationItem_010101317159  " target="" data-target-page-alias="" raw_url="/home/"> <span class="nav-item-text " data-link-text="
+                  
+         Ao vivo
+        
+                " data-auto="page-text-style">Ao vivo <span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li><li class=" unifiednav__item-wrap " data-auto="more-pages"> <a href="./#Contact" class="unifiednav__item  dmUDNavigationItem_010101751708  " target="" data-target-page-alias="" raw_url="/home/"> <span class="nav-item-text " data-link-text="
+                  
+         Contato
+        
+                " data-auto="page-text-style">Contato <span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1518473867 dmRespCol small-12 large-9 medium-9" id="1518473867"> <div class="u_1779664524 dmPhotoGallery newPhotoGallery dmPhotoGalleryResp" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="3" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1779664524" data-enable-lazy-loading="false" data-rows-to-show="100" data-tablet-text-layout="fixed" data-tablet-caption-alignment="center_center" data-placeholder="false"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1056127637" dont_set_id="true"> <li class="photoGalleryThumbs" id="1936282377"> <div class="image-container" id="1792162456"> <a data-dm-multisize-attr="href" data-image-url="/Resources/images/woman_typing_macbook_desktop.jpg" id="1403081099" class="u_1403081099"><img irh="" irw="" data-src="/Resources/images/woman_typing_macbook_desktop-1920w.jpg" id="1680783410" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1652524071" style="display:none" id="1652524071"> <span class="caption-inner" id="1572782194"> <h3 class="caption-title u_1764074842" id="1764074842">Servi&ccedil;os</h3> 
+ <div class="caption-text u_1484420181" id="1484420181"></div> 
+ <a class="caption-button dmWidget clearfix u_1951676818" id="1951676818"> <span class="iconBg" id="1558875730"> <span class="icon hasFontIcon icon-star" id="1778477993"></span> 
+</span> 
+ <span class="text" id="1815389523">Bot&atilde;o</span> 
+</a> 
+</span> 
+</div> 
+</li><li class="photoGalleryThumbs" id="1630190837"> <div class="image-container" id="1651588763"> <a data-dm-multisize-attr="href" data-image-url="/Resources/images/Magazine_on_wooden_desk.jpg" id="1400827333" class="u_1400827333"><img irh="" irw="" data-src="/Resources/images/Magazine_on_wooden_desk-1920w.jpg" id="1894279638" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1486052808" style="display:none" id="1486052808"> <span class="caption-inner" id="1258310460"> <h3 class="caption-title u_1656250941" id="1656250941">Projetos</h3> 
+ <div class="caption-text u_1935679602" id="1935679602"></div> 
+ <a class="caption-button dmWidget clearfix u_1205392768" id="1205392768"> <span class="iconBg" id="1407130658"> <span class="icon hasFontIcon icon-star" id="1969445240"></span> 
+</span> 
+ <span class="text" id="1855384570">Bot&atilde;o</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</ul> 
+ <div class="photoGalleryViewAll link" isall="true" data-viewall="Ver Mais" data-viewless="ver menos" style="display:none;" id="1895182017">Ver Mais</div> 
+ <li class="photoGalleryThumbs" id="1564205360"> <div class="image-container" id="1268062011"> <a data-dm-multisize-attr="href" data-image-url="/Resources/images/orange_juice_bottle.jpg" id="1462819278" class="u_1462819278"><img irh="" irw="" data-src="/Resources/images/orange_juice_bottle-1920w.jpg" id="1622893802" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1373984751" style="display:none" id="1373984751"> <span class="caption-inner" id="1115124298"> <h3 class="caption-title u_1421551384" id="1421551384">comprar</h3> 
+ <div class="caption-text u_1272808326" id="1272808326"></div> 
+ <a class="caption-button dmWidget clearfix u_1737611126" id="1737611126"> <span class="iconBg" id="1656064610"> <span class="icon hasFontIcon icon-star" id="1067795300"></span> 
+</span> 
+ <span class="text" id="1664834800">Bot&atilde;o</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1427956581 dmRespRow" style="text-align: center;" id="1427956581"> <div class="dmRespColsWrapper" id="1534179862"> <div class="u_1458501725 dmRespCol small-12 medium-12 large-12 empty-column" id="1458501725"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content"> <div id="hamburger-header-container" class="hamburger-header-container p_hfcontainer"> <div id="hamburger-header" class="hamburger-header p_hfcontainer" layout="44dc38f951e9489490b055748e10ba9f===header" data-scrollable-target="body" data-scroll-responder-id="hamburger-header"> <div class="u_1282888029 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1282888029"> <div class="dmRespColsWrapper" id="1296025942"> <div class="u_1327453471 dmRespCol small-12 large-4 medium-4 empty-column content-removed" id="1327453471"></div> 
+ <div class="u_1155146687 dmRespCol small-12 large-4 medium-4 empty-column" id="1155146687"></div> 
+ <div class="dmRespCol small-12 medium-4 large-4" id="1411617614"> <a data-display-type="block" class="u_1370207732 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="mailto:mymail@mailservice.com" data-element-type="dButtonLinkId" id="1370207732" dm_dont_rewrite_url="false"> <span class="iconBg" id="1351103582"> <span class="icon hasFontIcon icon-star" id="1902605042"></span> 
+</span> 
+ <span class="text" id="1607128391">Contate-nos</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="1901957768" class="dmBody u_dmStyle_template_home dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div class="u_pa_8552430 dmRespRow dmSectionNoParallax" style="text-align: center;" id="pa_8552430" mode="1"> <div class="dmRespColsWrapper u_1568127116" id="1568127116"> <div class="u_1414742659 dmRespCol small-12 medium-12 large-12" id="1414742659"> <div class="u_1267647558 dmNewParagraph" data-element-type="paragraph" id="1267647558" data-uialign="center" style="transition: none 0s ease 0s; display: block; text-align: center;" data-version="5"> <h5 class="text-align-center"> <span style="display: initial; font-weight: 300;">Siga. Compartilhe. Ou&ccedil;a.</span> 
+</h5> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow fullBleedChanged fullBleedMode u_1900243135" style="text-align: center;" id="1900243135"> <div class="dmRespColsWrapper" id="1794398626"> <div class="dmRespCol small-12 medium-12 large-12 u_1321183726" id="1321183726"> <div class="u_1339187612 imageWidget align-center" editablewidget="true" data-element-type="image" data-widget-type="image" id="1339187612"><img src="/Resources/images/Grunge_black_background-bottom-2304w.png" id="1951801954" class="" data-dm-image-path="/Resources/images/Grunge_black_background-bottom.png" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_Bio" style="text-align: center;" id="Bio" data-anchor="Bio"> <div class="dmRespColsWrapper" id="1905489701"> <div class="dmRespCol small-12 medium-12 large-12 u_1993516669" id="1993516669"> <div class="u_1014536616 dmNewParagraph" id="1014536616" data-uialign="center" data-element-type="paragraph" style="transition: none 0s ease 0s; text-align: center;" data-version="5"> <h2 style="color:rgb(255, 255, 255);" class="text-align-center"> <span style="color: rgb(255, 255, 255); display: initial;">B I O</span> 
+</h2> 
+</div> 
+ <div class="u_1127186512 dmNewParagraph" data-dmtmpl="true" id="1127186512" data-uialign="center" style="transition: none 0s ease 0s; display: block; text-align: center;" data-version="5"> <p style="color:rgb(255, 255, 255);" class="text-align-center"> <span style="color: rgb(255, 255, 255); display: initial;">Meu nome &eacute; Kye e m&uacute;sica &eacute; minha vida. Comecei a tocar bateria aos quatro anos e migrei para o viol&atilde;o e gaita aos 12. Quando cheguei aos 17, n&atilde;o restava d&uacute;vida em mim sobre o que eu queria da minha vida. Eu queria fazer m&uacute;sica. Mudei para Nova York e vivi meu sonho, servindo caf&eacute; de dia e tocando em bares &agrave; noite. Assinei o contrato para meu primeiro &aacute;lbum apenas com 21 anos de idade &ndash;&nbsp;tudo parecia bom demais para ser verdade, mas s&oacute; melhorou depois disso. Para saber mais sobre mim, ou&ccedil;a minha m&uacute;sica. Ela diz tudo.</span> 
+</p> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow fullBleedChanged fullBleedMode u_1448676332" style="text-align: center;" id="1448676332"> <div class="dmRespColsWrapper" id="1542305897"> <div class="dmRespCol small-12 medium-12 large-12 u_1702227603" id="1702227603"> <div class="u_1496387209 imageWidget align-center" editablewidget="true" data-element-type="image" data-widget-type="image" id="1496387209"><img src="/Resources/images/Grunge_black_background_top-2304w.png" id="1501729252" class="" data-dm-image-path="/Resources/images/Grunge_black_background_top.png" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_Listen" style="text-align: center;" id="Listen" data-anchor="Listen"> <div class="dmRespColsWrapper" id="1978649141"> <div class="dmRespCol small-12 large-6 medium-6 u_1895382858" id="1895382858"> <div class="u_1329761282 dmNewParagraph" id="1329761282" data-uialign="left" data-element-type="paragraph" style="transition: none;" data-version="5"> <h3 style="" class="text-align-left"> <span class="" style="display: initial;">M I N H A&nbsp;&nbsp;
+ M &Uacute; S I C A</span> 
+</h3> 
+</div> 
+ <div class="u_1567900033 widget-7263ee dmCustomWidget" data-lazy-load="" id="1567900033" dmle_extension="custom_extension" data-element-type="custom_extension" wr="false" icon="false" surround="false" data-widget-id="7263ee57034d4b0a890f48d2b554393f" data-widget-version="13" data-widget-config="eyJ1cmwiOiJodHRwczovL3NvdW5kY2xvdWQuY29tL3VzZXItOTk5OTM5MjQ1L3NreXNjcmFwZXIiLCJtaXhjbG91ZExheW91dCI6ImJpZyIsInNob3dJbWFnZSI6dHJ1ZSwiZGFyayI6ZmFsc2UsInNvdW5kY2xvdWRMYXlvdXQiOiJtZWRpdW0iLCJjb2xvciI6IiMwMDAwMDAifQ=="> <iframe class="audioIframe medium-layout-soundcloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/user-999939245/skyscraper&color=%23000000&auto_play=&visual=false"></iframe> 
+</div> 
+ <div class="u_1266446937 widget-7263ee dmCustomWidget" data-lazy-load="" id="1266446937" dmle_extension="custom_extension" data-element-type="custom_extension" wr="false" icon="false" surround="false" data-widget-id="7263ee57034d4b0a890f48d2b554393f" data-widget-version="13" data-widget-config="eyJ1cmwiOiJodHRwczovL3NvdW5kY2xvdWQuY29tL3VzZXItOTk5OTM5MjQ1L2Zhdm9yaXRlcy0xIiwibWl4Y2xvdWRMYXlvdXQiOiJiaWciLCJzaG93SW1hZ2UiOnRydWUsImRhcmsiOmZhbHNlLCJzb3VuZGNsb3VkTGF5b3V0IjoibWVkaXVtIiwiY29sb3IiOiIjMDAwMDAwIn0="> <iframe class="audioIframe medium-layout-soundcloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/user-999939245/favorites-1&color=%23000000&auto_play=&visual=false"></iframe> 
+</div> 
+ <div class="u_1114738038 widget-7263ee dmCustomWidget" data-lazy-load="" id="1114738038" dmle_extension="custom_extension" data-element-type="custom_extension" wr="false" icon="false" surround="false" data-widget-id="7263ee57034d4b0a890f48d2b554393f" data-widget-version="13" data-widget-config="eyJ1cmwiOiJodHRwczovL3NvdW5kY2xvdWQuY29tL3VzZXItOTk5OTM5MjQ1L29uLXRoZS13YXkiLCJtaXhjbG91ZExheW91dCI6ImJpZyIsInNob3dJbWFnZSI6dHJ1ZSwiZGFyayI6ZmFsc2UsInNvdW5kY2xvdWRMYXlvdXQiOiJtZWRpdW0iLCJjb2xvciI6IiMwMDAwMDAifQ=="> <iframe class="audioIframe medium-layout-soundcloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/user-999939245/on-the-way&color=%23000000&auto_play=&visual=false"></iframe> 
+</div> 
+</div> 
+ <div class="dmRespCol large-6 medium-6 small-12 u_1252298545" id="1252298545"> <div class="u_1211336727 dmNewParagraph" id="1211336727" data-uialign="right" data-element-type="paragraph" style="transition: none;" data-version="5"> <h3 style="" class="text-align-left"> <span class="" style="display: initial;">M E U S&nbsp;&nbsp;
+ V &Iacute; D E O S</span> 
+</h3> 
+</div> 
+ <div data-element-type="dYouTubeId" class="u_1673376995 youtubeExt dmNoMark hasFullWidth" id="1673376995"> <div class="innerYoutubeExt" id="1852475276"> <iframe src="https://www.youtube.com/embed/RjmeX8JPfZI" frameborder="0" allowfullscreen="" id="1842242215" class=""></iframe> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow fullBleedChanged fullBleedMode u_1852578429" style="text-align: center;" id="1852578429"> <div class="dmRespColsWrapper" id="1876862686"> <div class="dmRespCol small-12 medium-12 large-12 u_1265082891" id="1265082891"> <div class="u_1616221540 imageWidget align-center" editablewidget="true" data-element-type="image" data-widget-type="image" id="1616221540"><img src="/Resources/images/Grunge_black_background-bottom-2304w.png" id="1138474380" class="" data-dm-image-path="/Resources/images/Grunge_black_background-bottom.png" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_Gallery" style="text-align: center;" id="Gallery" data-anchor="Gallery"> <div class="dmRespColsWrapper" id="1157484593"> <div class="dmRespCol small-12 medium-12 large-12 u_1278980660" id="1278980660"> <div class="u_1528585663 dmNewParagraph" id="1528585663" data-uialign="center" data-element-type="paragraph" style="transition: none 0s ease 0s; text-align: center;" data-version="5"> <h2 style="color:rgb(255, 255, 255);" class="text-align-center"> <span style="color: rgb(255, 255, 255); display: initial;">GALERIA</span> 
+</h2> 
+</div> 
+ <div class="u_1488991643 dmPhotoGallery newPhotoGallery dmPhotoGalleryResp" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="4" data-element-type="dPhotoGalleryId" data-desktop-text-layout="bottom" id="1488991643" data-placeholder="false" data-image-hover-effect="zoomout" data-mobile-text-layout="bottom" data-mobile-caption-alignment="center_left" data-rows-to-show="4" data-mobile-columns="1" data-desktop-caption-alignment="bottom_left"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1787546430" dont_set_id="true"> <li index="3" class="photoGalleryThumbs" id="1161312505"> <div class="image-container" id="1624541865"> <a data-dm-multisize-attr="href" data-image-url="/Resources/images/photo-1522536421511-14c9073df899.jpg" id="1278681310" class="u_1278681310"><img data-src="/Resources/images/photo-1522536421511-14c9073df899-1920w.jpg" irh="4" irw="5" id="1284446990" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1001707354" id="1001707354"> <span class="caption-inner" id="1140859060"> <h3 class="caption-title u_1576761441" id="1576761441"></h3> 
+ <div class="caption-text u_1366034802" id="1366034802"> <p class="rteBlock">@VOGUE Magazine</p> 
+</div> 
+ <a class="caption-button dmWidget clearfix u_1417387896" id="1417387896"> <span class="iconBg" id="1540949945"> <span class="icon hasFontIcon icon-star" id="1516558793"></span> 
+</span> 
+ <span class="text" id="1247999646">Bot&atilde;o</span> 
+</a> 
+</span> 
+</div> 
+</li><li class="photoGalleryThumbs" id="1126139716"> <div class="image-container" id="1010366856"> <a data-dm-multisize-attr="href" data-image-url="/Resources/images/photo-1484876065684-b683cf17d276.jpg" id="1720114573"><img irh="" irw="" data-src="/Resources/images/photo-1484876065684-b683cf17d276-1920w.jpg" id="1532962317" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1227331814" style="display:none" id="1227331814"> <span class="caption-inner" id="1923450786"> <h3 class="caption-title u_1577716489" id="1577716489"></h3> 
+ <div class="caption-text u_1508710414" id="1508710414"> <p class="rteBlock">@Paris Olympia</p> 
+</div> 
+ <a class="caption-button dmWidget clearfix u_1959168157" id="1959168157"> <span class="iconBg" id="1263552714"> <span class="icon hasFontIcon icon-star" id="1889827750"></span> 
+</span> 
+ <span class="text" id="1214184184">Bot&atilde;o</span> 
+</a> 
+</span> 
+</div> 
+</li><li class="photoGalleryThumbs" id="1166236427"> <div class="image-container" id="1143981049"> <a data-dm-multisize-attr="href" data-image-url="/Resources/images/photo-1484972759836-b93f9ef2b293.jpg" id="1953605351"><img irh="" irw="" data-src="/Resources/images/photo-1484972759836-b93f9ef2b293-1920w.jpg" id="1591005371" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1023016025" style="display:none" id="1023016025"> <span class="caption-inner" id="1401426583"> <h3 class="caption-title u_1474532566" id="1474532566"></h3> 
+ <div class="caption-text u_1949333876" id="1949333876"> <p class="rteBlock">@Shoreditch Londres</p> 
+</div> 
+ <a class="caption-button dmWidget clearfix u_1298746937" id="1298746937"> <span class="iconBg" id="1954577507"> <span class="icon hasFontIcon icon-star" id="1536914009"></span> 
+</span> 
+ <span class="text" id="1798145130">Bot&atilde;o</span> 
+</a> 
+</span> 
+</div> 
+</li><li class="photoGalleryThumbs" id="1713183530"> <div class="image-container" id="1246889059"> <a data-dm-multisize-attr="href" data-image-url="/Resources/images/photo-1479087734076-99f93ef1acfd.jpg" id="1423267700"><img irh="" irw="" data-src="/Resources/images/photo-1479087734076-99f93ef1acfd-1920w.jpg" id="1237906740" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1244723937" style="display:none" id="1244723937"> <span class="caption-inner" id="1790513319"> <h3 class="caption-title u_1899214638" id="1899214638"></h3> 
+ <div class="caption-text u_1786776200" id="1786776200"> <p class="rteBlock">@Los Angeles&nbsp;</p> 
+</div> 
+ <a class="caption-button dmWidget clearfix u_1905645334" id="1905645334"> <span class="iconBg" id="1654167817"> <span class="icon hasFontIcon icon-star" id="1076907033"></span> 
+</span> 
+ <span class="text" id="1598910873">Bot&atilde;o</span> 
+</a> 
+</span> 
+</div> 
+</li><li class="photoGalleryThumbs" id="1816403999"> <div class="image-container" id="1471116147"> <a data-dm-multisize-attr="href" data-image-url="/Resources/images/photo-1502377429547-835a416e4a90.jpg" id="1555699360"><img irh="" irw="" data-src="/Resources/images/photo-1502377429547-835a416e4a90-1920w.jpg" id="1051813015" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1753409683" style="display:none" id="1753409683"> <span class="caption-inner" id="1959724675"> <h3 class="caption-title u_1876710296" id="1876710296"></h3> 
+ <div class="caption-text u_1446404198" id="1446404198"> <p class="rteBlock">@Los Angeles&nbsp;</p> 
+</div> 
+ <a class="caption-button dmWidget clearfix u_1400701713" id="1400701713"> <span class="iconBg" id="1263839797"> <span class="icon hasFontIcon icon-star" id="1844572945"></span> 
+</span> 
+ <span class="text" id="1497657685">Bot&atilde;o</span> 
+</a> 
+</span> 
+</div> 
+</li><li class="photoGalleryThumbs" id="1309722191"> <div class="image-container" id="1403055264"> <a data-dm-multisize-attr="href" data-image-url="/Resources/images/photo-1511815257156-f3d2feb05240.jpg" id="1971068132"><img irh="" irw="" data-src="/Resources/images/photo-1511815257156-f3d2feb05240-1920w.jpg" id="1617181798" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1972532466" style="display:none" id="1972532466"> <span class="caption-inner" id="1553718791"> <h3 class="caption-title u_1224320109" id="1224320109"></h3> 
+ <div class="caption-text u_1843088955" id="1843088955"> <p class="rteBlock">@No inspiration</p> 
+</div> 
+ <a class="caption-button dmWidget clearfix u_1792390409" id="1792390409"> <span class="iconBg" id="1973902740"> <span class="icon hasFontIcon icon-star" id="1217246618"></span> 
+</span> 
+ <span class="text" id="1563003271">Bot&atilde;o</span> 
+</a> 
+</span> 
+</div> 
+</li><li class="photoGalleryThumbs" id="1692757903"> <div class="image-container" id="1895308468"> <a data-dm-multisize-attr="href" data-image-url="/Resources/images/photo-1516745427174-97d03c227939.jpg" id="1916917064"><img irh="" irw="" data-src="/Resources/images/photo-1516745427174-97d03c227939-1920w.jpg" id="1106640553" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1841131014" style="display:none" id="1841131014"> <span class="caption-inner" id="1588217780"> <h3 class="caption-title u_1736057892" id="1736057892"></h3> 
+ <div class="caption-text u_1370421939" id="1370421939"> <p class="rteBlock">@Studio RWC</p> 
+</div> 
+ <a class="caption-button dmWidget clearfix u_1526043030" id="1526043030"> <span class="iconBg" id="1018746284"> <span class="icon hasFontIcon icon-star" id="1716717107"></span> 
+</span> 
+ <span class="text" id="1603458623">Bot&atilde;o</span> 
+</a> 
+</span> 
+</div> 
+</li><li class="photoGalleryThumbs" id="1586617855"> <div class="image-container" id="1817062175"> <a data-dm-multisize-attr="href" data-image-url="/Resources/images/photo-1507766134518-1323c66819f6.jpg" id="1771039273" class="u_1771039273"><img irh="" irw="" data-src="/Resources/images/photo-1507766134518-1323c66819f6-1920w.jpg" id="1090635616" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container u_1130240915" style="display:none" id="1130240915"> <span class="caption-inner" id="1582385036"> <h3 class="caption-title u_1665107596" id="1665107596"></h3> 
+ <div class="caption-text u_1089081454" id="1089081454"> <p class="rteBlock">@NYC Carnegie hall</p> 
+</div> 
+ <a class="caption-button dmWidget clearfix u_1330981950" id="1330981950"> <span class="iconBg" id="1338784216"> <span class="icon hasFontIcon icon-star" id="1100466796"></span> 
+</span> 
+ <span class="text" id="1391182328">Bot&atilde;o</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</ul> 
+ <div class="photoGalleryViewAll link" isall="true" data-viewall="Ver Mais" data-viewless="ver menos" style="display:none;" id="1222246555">Ver Mais</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow fullBleedChanged fullBleedMode u_1801254349" style="text-align: center;" id="1801254349"> <div class="dmRespColsWrapper" id="1472571218"> <div class="dmRespCol small-12 medium-12 large-12 u_1704153762" id="1704153762"> <div class="u_1777875213 imageWidget align-center" editablewidget="true" data-element-type="image" data-widget-type="image" id="1777875213"><img src="/Resources/images/Grunge_black_background_top-2304w.png" id="1093379429" class="" data-dm-image-path="/Resources/images/Grunge_black_background_top.png" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_Live" style="text-align: center;" id="Live" data-anchor="Live"> <div class="dmRespColsWrapper" id="1090338007"> <div class="dmRespCol small-12 medium-12 large-12" id="1824947858"> <div class="u_1446096863 dmNewParagraph" id="1446096863" data-uialign="center" data-element-type="paragraph" style="transition: none 0s ease 0s; text-align: center;" data-version="5"> <h2 style="color:rgb(255, 255, 255);" class="text-align-center"> <span style="color: rgb(255, 255, 255); display: initial;">AO VIVO</span> 
+</h2> 
+</div> 
+ <div class="u_1137214612 dmNewParagraph" data-dmtmpl="true" id="1137214612" data-uialign="center" data-version="5" style="text-align: center;"> <p style="color:rgb(255, 255, 255);" class="text-align-center"> <span style="color: rgb(255, 255, 255); display: initial;">Pr&oacute;ximos shows</span> 
+</p> 
+</div> 
+ <div class="u_1347363406 dmPrettyList ed-version" data-element-type="dListId" layout="layoutA" data-dmtmpl="true" id="1347363406" link-element="button" image-element="image" saved-layout="layoutA" data-hover-effect-parent="opacity"> <h3 class="dmwidget-title" hide="true" id="1296314285">Lista de servi&ccedil;os</h3> 
+ <ul class="listWidgetContainer clearfix" id="1734825654"> <li class="listItem" id="1244599103"> <a class="biglink clearfix" href="" id="1567984295"> <div class="listImage u_1576795202" id="1576795202"></div> 
+ <div class="listText" id="1222497308"> <span class="itemName" id="1197801776" style="">15/NOV</span> 
+ <div class="itemText" id="1426360938" style="">PARIS&nbsp;
+               Stade de France
+               Um dos locais mais adorados da cidade. Intimista e ornamentado, &eacute; um local &oacute;timo para shows.</div> 
+</div> 
+ <span class="link dmWidget u_1181232347" id="1181232347"> <span class="buttonText text" id="1340195564">RESERVE SEU LUGAR</span> 
+ <span class="itemName" id="1588464493">Lista Item 1</span> 
+</span> 
+</a> 
+</li><li class="listItem" id="1635011336"> <a class="biglink clearfix" href="" id="1655181314"> <div class="listImage u_1463356111" id="1463356111"></div> 
+ <div class="listText" id="1350826010"> <span class="itemName" id="1340361017">20/FEV</span> 
+ <div class="itemText" id="1157348386" style="">MADRID&nbsp;
+               Palacio Vistalegre
+               Este local, constru&iacute;do h&aacute; mais de 70 anos, tem uma qualidade de som incr&iacute;vel. &nbsp;</div> 
+</div> 
+ <span class="link dmWidget" id="1731123341"> <span class="buttonText text" id="1500903016">RESERVE SEU LUGAR</span> 
+ <span class="itemName" id="1029478752">Lista Item 2</span> 
+</span> 
+</a> 
+</li><li class="listItem" id="1353024671"> <a class="biglink clearfix" href="" id="1165937718"> <div class="listImage u_1976761034" id="1976761034"></div> 
+ <div class="listText" id="1230934455"> <span class="itemName" id="1676096592">2/MAIO</span> 
+ <div class="itemText" id="1417237347" style="">BERLIM&nbsp;
+               Mercedes-Benz Arena
+               Moderno e vibrante, este &eacute; um dos locais mais procurados de Berlim. Excelente para m&uacute;sica ao vivo.&nbsp;</div> 
+</div> 
+ <span class="link dmWidget" id="1885689132"> <span class="buttonText text" id="1971330073">RESERVE SEU LUGAR</span> 
+ <span class="itemName" id="1346250194">Lista Item 3</span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow fullBleedChanged fullBleedMode u_1482305201" style="text-align: center;" id="1482305201"> <div class="dmRespColsWrapper" id="1688080275"> <div class="dmRespCol small-12 medium-12 large-12 u_1335408439" id="1335408439"> <div class="u_1843427644 imageWidget align-center" editablewidget="true" data-element-type="image" data-widget-type="image" id="1843427644"><img src="/Resources/images/Grunge_black_background-bottom-2304w.png" id="1686927518" class="" data-dm-image-path="/Resources/images/Grunge_black_background-bottom.png" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_Contact fullBleedChanged fullBleedMode" style="text-align: center;" id="Contact" data-anchor="Contact"> <div class="dmRespColsWrapper" id="1088473928"> <div class="u_1893991502 dmRespCol small-12 large-3 medium-3" id="1893991502"> <div class="u_1714159419 dmNewParagraph" data-element-type="paragraph" id="1714159419" data-uialign="center" style="transition: none 0s ease 0s; text-align: center;" data-version="5"> <h5 style="" class="text-align-center"> <span style="font-weight: 700; display: initial;">ETIQUETA&nbsp;
+ mymail@mailservice.com
+ 01 23 45 67 89&nbsp;
+ AGENTE&nbsp;
+ meuemail@provedor.com
+ 01 23 45 67 89</span> 
+</h5> 
+</div> 
+</div> 
+ <div class="u_1197519739 dmRespCol small-12 large-6 medium-6" id="1197519739"> <div class="u_1893841052 dmNewParagraph" id="1893841052" data-uialign="center" data-element-type="paragraph" style="transition: none 0s ease 0s; text-align: center;" data-version="5"> <h3 style="" class="text-align-center"> <span style="display: initial;">F I Q U E&nbsp; L I G A D O</span> 
+</h3> 
+</div> 
+ <div class="u_1904209994 dmform default" preserve_css="true" data-element-type="dContactUsRespId" id="1904209994" captcha="true" data-captcha-position="bottomleft"> <h3 class="dmform-title dmwidget-title" id="1928907555" hide="true"></h3> 
+ <div class="dmform-wrapper" preserve_css="true" id="1024638681" captcha-lang="pt"> <form method="post" class="dmRespDesignRow" locale="ENGLISH" id="1518290654" action=""> <div class="dmforminput required  small-12 dmRespDesignCol medium-8 large-8 medium-12 large-12 medium-10 large-10" id="1355280603"> <label for="dmform-0" id="1768792137" class="" hide="true">Nome Completo</label> 
+<input type="text" class="" name="dmform-0" id="1193369876" placeholder="Nome Completo"/><input type="hidden" name="label-dmform-0" value="Nome Completo" id="1863385756" class=""/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol medium-12 large-12 medium-10 large-10 medium-9 large-9" id="1445410655"> <label for="dmform-1" id="1591799992" class=""></label> 
+<input type="text" name="dmform-1" id="1935648901" class="" placeholder="Endereço de E-mail"/><input type="hidden" name="label-dmform-1" id="1245910907" class=""/></div> 
+ <span id="1971622565" class="dmWidgetClear"></span> 
+ <span id="1098813107" class="dmWidgetClear"></span> 
+ <div class="dmformsubmit dmWidget R" preserve_css="true" id="1510714919"><input class="" name="submit" type="submit" value="ASSINAR" id="1062189862"/></div> 
+<input name="dmformsendto" type="hidden" value="O0wrseIfFLt5Pw7eX3rAA/38jHUwrKtQUj3MNSIRqf1DevnFRL4Ja/2rMwRyZxskFIP4IK7E0myVgsyPiccSeQ==" preserve_css="true" id="1772742985" data-dec="true"/><input class="dmActionInput" type="hidden" name="action" value="/_dm/s/rt/widgets/dmform.submit.jsp" id="1139310704"/><input name="dmformsubject" type="hidden" value="Mensagem do Formulário" preserve_css="true" id="1778209616"/></form> 
+</div> 
+ <div class="dmform-success" style="display:none" preserve_css="true" id="1642300659">Obrigado por entrar em contato. Retornaremos assim que poss&iacute;vel.</div> 
+ <div class="dmform-error" style="display:none" preserve_css="true" id="1206547740">Desculpe, houve um erro ao enviar a mensagem. Por favor, tente novamente mais tarde.</div> 
+</div> 
+</div> 
+ <div class="u_1885491873 dmRespCol small-12 large-3 medium-3" id="1885491873"> <div class="u_1198148999 align-center text-align-center dmSocialHub" id="1198148999" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords="" data-editor="eyJ0aXRsZSI6IiIsImRpc3BsYXlUaXRsZSI6ZmFsc2UsImZvcmNlRGlzcGxheSI6ZmFsc2UsImxheW91dCI6IiIsIm5ldHdvcmtzIjpbeyJ1cmwiOiJodHRwczovL2ZhY2Vib29rLmNvbS8iLCJvcmRlciI6MCwiaWQiOiJmYWNlYm9vayIsImljb25fY2xhc3MiOiIiLCJpY29uX2N1c3RvbSI6IiIsImRhdGFWYWx1ZSI6bnVsbH0seyJ1cmwiOiJodHRwczovL3R3aXR0ZXIuY29tLyIsIm9yZGVyIjoxLCJpZCI6InR3aXR0ZXIiLCJpY29uX2NsYXNzIjoiIiwiaWNvbl9jdXN0b20iOiIiLCJkYXRhVmFsdWUiOm51bGx9LHsidXJsIjoiaHR0cDovL2luc3RhZ3JhbS5jb20vIiwib3JkZXIiOjIsImlkIjoiaW5zdGFncmFtIiwiaWNvbl9jbGFzcyI6IiIsImljb25fY3VzdG9tIjoiIiwiZGF0YVZhbHVlIjpudWxsfSx7InVybCI6Imh0dHBzOi8veW91dHViZS5jb20vIiwib3JkZXIiOjMsImlkIjoieW91dHViZSIsImljb25fY2xhc3MiOiIiLCJpY29uX2N1c3RvbSI6IiIsImRhdGFWYWx1ZSI6bnVsbH0seyJ1cmwiOiJodHRwczovL3NuYXBjaGF0LmNvbS8iLCJvcmRlciI6NCwiaWQiOiJzbmFwY2hhdCIsImljb25fY2xhc3MiOiIiLCJpY29uX2N1c3RvbSI6IiIsImRhdGFWYWx1ZSI6bnVsbH1dLCJpY29uc19zdHlsZSI6IjUiLCJhbGxfcGFnZXMiOmZhbHNlfQ=="> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://facebook.com/" target="_blank" dm_dont_rewrite_url="true"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style5" data-hover-effect=""></span> 
+</a> 
+ <a href="https://twitter.com/" target="_blank" dm_dont_rewrite_url="true"> <span class="dmSocialTwitter dm-social-icons-twitter oneIcon socialHubIcon style5" data-hover-effect=""></span> 
+</a> 
+ <a href="http://instagram.com/" target="_blank" dm_dont_rewrite_url="true"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style5" data-hover-effect=""></span> 
+</a> 
+ <a href="https://youtube.com/" target="_blank" dm_dont_rewrite_url="true"> <span class="dmSocialYoutube dm-social-icons-youtube oneIcon socialHubIcon style5" data-hover-effect=""></span> 
+</a> 
+ <a href="https://snapchat.com/" target="_blank" dm_dont_rewrite_url="true"> <span class="dmSocialSnapchat dm-social-icons-snapchat oneIcon socialHubIcon style5" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="dmRespRow u_1991131139" style="text-align: center;" id="1991131139"> <div class="dmRespColsWrapper" id="1845644197"> <div class="dmRespCol small-12 medium-12 large-12" id="1324523549"> <div class="u_1298696182 dmNewParagraph" data-element-type="paragraph" id="1298696182" data-uialign="center" data-version="5" style="text-align: center;"> <h6 style="" class="text-align-center"> <span style="font-weight: 300; display: initial;">&copy; Todos os direitos reservados&nbsp; Nome da empresa</span> 
+</h6> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false" data-dmtmpl="true"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" role="button" aria-label="menu opener" tabindex="0"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+<!--  Add full CSS and Javascript before the close tag of the body if needed --> <script src="/Scripts/desktop.js"> </script> 
+ <script type="text/javascript" id="d_track_campaign">
+(function() {
+ 	var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+
+ 	if (campaign && campaign != null && campaign.length > 1) {
+ 		campaign = campaign[1];
+ 		document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+ 	}
+}());
+</script> 
+ <script type="text/javascript">
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script> 
+ <div style="display:none;" id="P6iryBW0Wu"></div> 
+<!-- photoswipe markup --><!-- Root element of PhotoSwipe. Must have class pswp. --> <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"><!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). --> <div class="pswp__bg"></div> 
+<!-- Slides wrapper with overflow:hidden. --> <div class="pswp__scroll-wrap"><!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. --> <div class="pswp__container"> <div class="pswp__item"></div> 
+ <div class="pswp__item"></div> 
+ <div class="pswp__item"></div> 
+</div> 
+<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. --> <div class="pswp__ui pswp__ui--hidden"> <div class="pswp__top-bar"><!--  Controls are self-explanatory. Order can be changed. --> <div class="pswp__counter"></div> 
+ <button class="pswp__button pswp__button--close" title="Fechar (Esc)"></button> 
+ <button class="pswp__button pswp__button--share" title="Compartilhar"></button> 
+ <button class="pswp__button pswp__button--fs" title="Alternar tela cheia "></button> 
+ <button class="pswp__button pswp__button--zoom" title="Aumentar/diminuir zoom"></button> 
+<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR --><!-- element will get class pswp__preloader--active when preloader is running --> <div class="pswp__preloader"> <div class="pswp__preloader__icn"> <div class="pswp__preloader__cut"> <div class="pswp__preloader__donut"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"> <div class="pswp__share-tooltip"></div> 
+</div> 
+ <button class="pswp__button pswp__button--arrow--left" title="Anterior (seta para esquerda)"></button> 
+ <button class="pswp__button pswp__button--arrow--right" title="Próximo (seta para a direita)"></button> 
+ <div class="pswp__caption"> <div class="pswp__caption__center"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="fb-root" data-locale="pt_PT"></div> 
+<!-- Alias: 1ed8c402 --> <div class="dmPopupMask" id="dmPopupMask"></div> 
+ <div id="dmPopup" class="dmPopup"> <div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> 
+</div> 
+ <div class="dmPopupTitle"> <span></span> 
+Share by:</div> 
+ <div class="data"></div> 
+</div> 
+ <script id="d_track_personalization">
+// Collects client data and updates cookies used by smart sites
+var expireDays = 365,visitLength = 30 * 60000;
+$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), expireDays);
+function setSmartSiteCookies() {
+	setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+}
+$.DM.events.on("afterAjax", setSmartSiteCookies);
+setSmartSiteCookies();
+</script> 
+ <script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script> 
+ <script>
+
+    jQuery(window).load(function () {
+        try {
+            jQuery.DM.updateIOSHeight();
+        } catch (e) {
+        }
+        ;
+    });
+</script> 
+ <script>
+    dmAPI.loadScript(window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js', function () {
+        dmAPI.runOnReady('lozadInit', function () {
+            window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                img.addEventListener('load', function (event) {
+                    var img = event.target;
+                    img.style.filter = 'blur(0)';
+                    setTimeout(function () {
+                        $(img).closest('.imageWidget').addClass('lazyLoaded');
+                    }, 250)
+                });
+            });
+            lozad('.lazy', {
+                threshold: 0.1,
+                loaded: function (element) {
+                    if (element.getAttribute('data-background-image')) {
+                        element.style.setProperty(
+                            'background-image',
+                            "url('" + element.getAttribute('data-background-image') + "')",
+                            "important"
+                        );
+                    }
+                }
+            }).observe();
+        });
+    });
+</script> 
+ <script>
+    $(document.body).on("click", "a[href^='tel:'] , a[href^='sms:']", function (event) {
+        if ($.DM && $.DM.isTouchDevice) {
+            return true;
+        } else {
+            event.preventDefault();
+        }
+
+    });
+</script> 
+<!--  End Script tags --><!--  Site Wide Html Markup --><!--  Site Wide Html Markup --> <div> <script> window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create', 'UA-7265702-55', 'auto');ga('send', 'pageview');</script> 
+ <script async="" src="https://www.google-analytics.com/analytics.js"></script> 
+</div> 
+</body> 
+</html> 
